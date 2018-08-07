@@ -14,17 +14,17 @@
 
 ### app模块
 *就比较详细的说明一下app模块，library和push就自行简单了解*   
-.
-├── adapter **adapter相关**
-│   ├── MyPagerAdapter.java
-│   ├── base
-│   │   ├── BaseMultiItemQuickAdapter.java  **多种布局继承**
-│   │   ├── BaseQuickAdapter.java **一种布局继承**
-│   │   ├── BaseSectionQuickAdapter.java
-│   │   ├── BaseViewHolder.java
-│   │   ├── ListBaseAdapter.java
-│   │   └── TestHolder.java
-│   ├── divider
+.   
+├── adapter **adapter相关**   
+│   ├── MyPagerAdapter.java     
+│   ├── base    
+│   │   ├── BaseMultiItemQuickAdapter.java  **多种布局继承**      
+│   │   ├── BaseQuickAdapter.java **一种布局继承**        
+│   │   ├── BaseSectionQuickAdapter.java    
+│   │   ├── BaseViewHolder.java     
+│   │   ├── ListBaseAdapter.java    
+│   │   └── TestHolder.java     
+│   ├── divider     
 │   │   ├── DividerGridItemDecoration.java
 │   │   └── DividerItemDecoration.java
 │   ├── entity
