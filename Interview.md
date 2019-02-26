@@ -6,11 +6,16 @@
 4. android:gravity与android:layout_gravity的区别
 
 ### 二 四大组件
-1. Activity 的启动模式（ActivityA->ActivityB -> ActivityA）
-2. activity的startActivity和context的startActivity区别
-   如果从其他Context中启动Activity则必须给intent设置Flag
-3. Context的个数   
-4. Service 是运行在主线程吗？能在service中做耗时操作吗？
+1. Activity 的生命周期（ActivityA->ActivityB -> ActivityA）
+2. 当前Activity转到新的Activity界面或按Home键回到主屏经过的生命周期
+3. Activity返回前台经过的生命周期
+4. Activity退居后台，且系统内存不足， 系统会杀死这个后台状态的Activity，此时这个Activity的引用还在栈中吗？
+   若再次回到这个页面会经过生命生命周期
+5. Activity的启动模式有几种，分别是
+6. 若singleTop 启动了如果新Activity已经位于任务栈的栈顶,那么此Activity会调用onCreate，onStart，onResume吗？
+7. singleInstance启动的activity启动之后，后续请求会重启再次创建此Activity吗？
+8. Service 是运行在主线程吗？能在service中做耗时操作吗？
+9. 一个Activity可以关联多个Fragment，那么Activity的onCreate() 和 Fragment的onCreate() 方法谁先调用？
 
 ### 三 线程
 1. 非UI线程能够是否能够更新UI？
