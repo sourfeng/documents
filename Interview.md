@@ -1,7 +1,9 @@
 ## 基础部分
-### 一 布局
-1. LinearLayout 和 RelativeLayout的性能（层级有关）
-2. ViewStub的作用
+### 一 java基础
+1. equals与==的区别
+2. 面向对象设计原则
+3. 静态块的作用是什么？
+4. try catch finally，try里有return，finally还执行么？
 3. include 标签和 merge标签
 4. android:gravity与android:layout_gravity的区别
 
@@ -16,10 +18,17 @@
 7. singleInstance启动的activity启动之后，后续请求会重启再次创建此Activity吗？
 8. Service 是运行在主线程吗？能在service中做耗时操作吗？
 9. 一个Activity可以关联多个Fragment，那么Activity的onCreate() 和 Fragment的onCreate() 方法谁先调用？
+10. 如果ActivityA启动ActivityB时，ActivityA的onPause()进行了耗时操作，那么这个启动能成功吗？能成功会出现一种什么样的现象？
+
+### Context
+1. 创建对话框时能够传Application的context吗？
+2. Context的数量
+3. Activity和Service以及Application的Context是一样的吗？
 
 ### 三 线程
-1. 非UI线程能够是否能够更新UI？
-2. 线程安全和线程非安全的区别
+1. 线程间通信依靠什么？Handler Looper MessageQueue Message
+2. 非UI线程能够是否能够更新UI？
+3. 线程安全和线程非安全的区别
 
 ### 四 存储
 1. android中的存储有哪些？
@@ -30,6 +39,8 @@
 2. 为什么 view的 onLayout()方法是空的？
 
 ### 六 内存
+1. Java 程序运行时的分配的内存存储空间有哪几种？（静态区，栈，堆）
+2. String A = new String("A") 分别存储在哪儿？
 1. 什么是内存泄漏？常见有哪些方面？
 2. 如何处理OOM？
 3. java中有几种引用类型？分别在什么情况下回被回收
@@ -44,3 +55,4 @@
    2.1 compileSdkVersion 和 supportLibrary 之间的版本必须保持一致么？
 6. 架构MVP和MVC之间的区别
 7. 你在项目中遇到的最大的困难是什么，怎么解决的？
+
